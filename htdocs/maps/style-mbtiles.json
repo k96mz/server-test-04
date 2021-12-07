@@ -4,7 +4,7 @@
   "sources": {
     "ne-test": {
       "type": "vector",
-      "tiles": ["http://localhost:8836/zxy/ne-test/{z}/{x}/{y}.pbf"],
+      "tiles": ["http://localhost:8836/VT/zxy/ne-test/{z}/{x}/{y}.pbf"],
       "attribution": "Source is from NaturalEarth. The boundaries and names shown and the designations used on this map do not imply any endorsement or acceptance by any orgnizations.​",
       "minzoom": 0,
       "maxzoom": 5
