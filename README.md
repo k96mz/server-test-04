@@ -3,12 +3,12 @@ simple server with nodejs/express
 
 # Recommended environment
 * nodejs ver 14 or 16
-* pm2 ver xx
+* pm2 ver 4.4.0
 
 # install
 ### Raspberry Pi
-You can tary install.sh.  
-install.sh is only for raspberry pi.. (not tested yet)
+You can try install.sh.(not tested yet)  
+install.sh is only for raspberry pi.. 
 
 ### Linux server
 You can try

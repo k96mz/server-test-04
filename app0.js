@@ -4,7 +4,7 @@ const express = require('express')
 const spdy = require('spdy') //for https
 const cors = require('cors') 
 const morgan = require('morgan')
-//const TimeFormat = require('hh-mm-ss')
+const TimeFormat = require('hh-mm-ss')
 const winston = require('winston')
 const DailyRotateFile = require('winston-daily-rotate-file')
 
@@ -16,7 +16,6 @@ const fullchainPath = config.get('fullchainPath')
 const port = config.get('port') 
 const mbtilesDir = config.get('mbtilesDir')
 const logDirPath = config.get('logDirPath')
-
 
 // logger configuration
 const logger = winston.createLogger({

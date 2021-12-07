@@ -17,7 +17,6 @@ const port = config.get('port')
 const mbtilesDir = config.get('mbtilesDir')
 const logDirPath = config.get('logDirPath')
 
-
 // logger configuration
 const logger = winston.createLogger({
   transports: [

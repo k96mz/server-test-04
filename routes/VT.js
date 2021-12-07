@@ -1,6 +1,5 @@
 var express = require('express')
 var router = express.Router()
-
 const config = require('config')
 const fs = require('fs')
 const cors = require('cors')
@@ -18,7 +17,7 @@ var app = express()
 app.use(cors())
 
 
-//Get tile functions
+//specify the target mbtiles from the path
 const getMBTiles = async (t, z, x, y) => {
   let mbtilesPath = `${mbtilesDir}/${t}.mbtiles`
   return new Promise((resolve, reject) => {
@@ -43,7 +42,7 @@ const getMBTiles = async (t, z, x, y) => {
   })
 }
 
-
+//Get tile from mbtiles with z,x,y
 const getTile = async (mbtiles, z, x, y) => {
   return new Promise((resolve, reject) => {
     mbtiles.getTile(z, x, y, (err, tile, headers) => {
@@ -56,10 +55,7 @@ const getTile = async (mbtiles, z, x, y) => {
   })
 }
 
-
-
-
-/* GET Tile. */
+//GET Tile(router)- t,z,x,y are extracted from the path
 router.get(`/zxy/:t/:z/:x/:y.pbf`, 
  async function(req, res) {
   busy = true
