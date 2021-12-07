@@ -4,7 +4,6 @@ const express = require('express')
 const spdy = require('spdy') //for https
 const cors = require('cors') 
 const morgan = require('morgan')
-const MBTiles = require('@mapbox/mbtiles')
 //const TimeFormat = require('hh-mm-ss')
 const winston = require('winston')
 const DailyRotateFile = require('winston-daily-rotate-file')
