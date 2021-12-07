@@ -88,7 +88,8 @@ router.get(`/zxy/:t/:z/:x/:y.pbf`,
   }).catch(e => {
     res.status(404).send(`mbtiles not found for /zxy/${t}/${z}/${x}/${y}.pbf`)
   })
-})
+ }
+);
 
 
-module.exports = router
+module.exports = router;
