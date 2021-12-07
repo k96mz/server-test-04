@@ -36,13 +36,13 @@ logger.stream = {
 
 // app
 const app = express()
-var vtileMRouter = require('./routes/vtile-m') //tiling
+var VTRouter = require('./routes/VT') //tiling
 app.use(cors())
 app.use(morgan(morganFormat, {
   stream: logger.stream
 }))
 app.use(express.static(htdocsPath))
-app.use('/vtile-m', vtileMRouter)
+app.use('/VT', VTRouter)
 
 //for http
 app.listen(port, () => {
