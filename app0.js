@@ -22,6 +22,7 @@ const logDirPath = config.get('logDirPath')
 const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(),
+    new DailyRotateFile({
       filename: `${logDirPath}/server-%DATE%.log`,
       datePattern: 'YYYY-MM-DD'
     })
